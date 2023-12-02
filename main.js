@@ -1,4 +1,4 @@
-function agregar(){
+function agregar() {
 
 }
 
