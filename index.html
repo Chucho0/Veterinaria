@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <section>
+        <div class="encabezado">
+            <h1>Citas Agendadas</h1>
+        </div>
+        <div class="opciones">
+            <div class="estado">
+                <h3>Organizar por:</h3>
+                <label for="estado"></label>
+                <br>
+                <br>
+                <div> <label for="">Abierta</label>
+                    <input value="abierta" type="radio" name="estado" id="estado" />
+                </div>
+                <div> <label for="">Terminada</label>
+                    <input value="terminada" type="radio" name="estado" id="estado" />
+                </div>
+                <div> <label for="">Anulada</label>
+                    <input value="anulada" type="radio" name="estado" id="estado" />
+                </div>
+            </div>
+            <div class="botton">
+                <button onclick="agregar()">Agenda tu cita</button>
+            </div>
+        </div>
+        <div class="formulario">
+            <div>
+                <h3>Ingrese la informacion</h3>
+                <br>
+            </div>
+            <div class="cajas">
+                <div>
+                    <label for="nombredelamascota"><b>Nombre de la mascota</b></label>
+                    <br />
+                    <input type="text" placeholder="Digite el nombre de la mascota" id="nombredelamascota" />
+                </div>
+                <br />
+                <div>
+                    <label for="propietario"><b>Propietario</b></label>
+                    <br />
+                    <input type="text" placeholder="Digite el nombre del propietario" id="propietario" />
+                </div>
+                <br>
+                <div>
+                    <label for="numerodetelefono"><b>Numero de Telefono</b></label>
+                    <br />
+                    <input type="text" placeholder="N° de telefono" id="numerodetelefono" />
+                </div>
+                <br>
+                <div>
+                    <label for="tipodemascota"><b>Tipo de mascota</b></label>
+                    <select class="lista" name="tipodemascota" id="tipodemascota">
+                        <option value="" disabled selected>Seleccione un tipo de mascota</option>
+                        <option value="mamiferos">Mamiferos</option>
+                        <option value="anfibios">Anfibios</option>
+                        <option value="reptiles">Reptiles</option>
+                        <option value="peces">Peces</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="fecha"><b>Fecha</b></label>
+                    <br />
+                    <input type="date" id="fecha" />
+                </div>
+                <br>
+                <div>
+                    <label for="tiempo"><b>Hora</b></label>
+                    <br>
+                    <input type="time" id="tiempo">
+                </div>
+                <br>
+                <div>
+                    <label for="sintomas"><b>Sintomas</b></label>
+                    <br>
+                    <input type="text" id="sintomas">
+                </div>
+            </div>
+        </div>
+        <div class="cartas">
+
+        </div>
+    </section>
+</body>
+
+</html>
