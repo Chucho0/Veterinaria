@@ -13,12 +13,12 @@ function mostrarAlerta(mensaje) {
 
 function registrar() {
     let formulario = document.querySelector('.cont_for');
-    formulario.style.left = '50%';
+    formulario.style.top = '20px';
 }
 
 function cerrar() {
     let formulario = document.querySelector('.cont_for');
-    formulario.style.left = '-100%';
+    formulario.style.top = '-100%';
     document.getElementById('nombreMascota').value = '';
     document.getElementById('nombrePropietario').value = '';
     document.getElementById('telefono').value = '';
@@ -149,7 +149,7 @@ function enviar() {
 
     registrosActivos.push(registro);
 
-    formulario.style.left = '-100%';
+    formulario.style.top = '-100%';
 }
 
 function abrirCard(id) {
@@ -288,7 +288,7 @@ function mostrarFormularioEdicion(registro, index) {
         actualizarRegistro(registro, index);
     };
 
-    formularioEdicion.style.left = '50%';
+    formularioEdicion.style.top = '20px';
 }
 
 function actualizarRegistro(registro, index) {
